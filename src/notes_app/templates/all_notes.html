@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hi</h1>
+<h2><a href="{% url 'notes:add_note'%}">Add new Note</a></h2><br>
+{% for note in all_notes%}
+<a href="{% url 'notes:note_detail' note.slug%}">{{note}}</a><br>
+{% endfor%}
+</body>
+</html>

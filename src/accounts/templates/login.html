@@ -1,0 +1,79 @@
+
+{% extends "base.html"%}
+
+
+
+<!--<div class="container">-->
+<!--    <div class="row-fluid">-->
+<!--        <div class="span12">-->
+<!--            <div class="span6">-->
+<!--                <div class="area">-->
+<!--                    <form class="form-horizontal">-->
+<!--                        <div class="heading">-->
+<!--                            <h4 class="form-heading">Sign In</h4>-->
+<!--                        </div>-->
+
+
+
+<!--                        <div class="control-group">-->
+<!--                            <label class="control-label" for=-->
+<!--                            "inputUsername">Username</label>-->
+
+<!--                            <div class="controls">-->
+<!--                                <input id="inputUsername" placeholder=-->
+<!--                                "E.g. ashwinhegde" type="text">-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="control-group">-->
+<!--                            <label class="control-label" for=-->
+<!--                            "inputPassword">Password</label>-->
+
+<!--                            <div class="controls">-->
+<!--                                <input id="inputPassword" placeholder=-->
+<!--                                "Min. 8 Characters" type="password">-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="control-group">-->
+<!--                            <div class="controls">-->
+<!--                                <label class="checkbox"> <a class="btn btn-link"-->
+<!--                                href="#">Forgot my password</a></label>-->
+<!--                                <button class="btn btn-success" type=-->
+<!--                                "submit">Sign In</button> <button class="btn"-->
+<!--                                type="button">Help</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div>-->
+<!--                            dont have an Account..?!<a href="">Sign Up</a>-->
+<!--                        </div>-->
+
+
+<!--                    </form>-->
+<!--                </div>-->
+<!--            </div>-->
+
+
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+{% load static%}
+{% load bootstrap4 %}
+{% block body%}
+<div class="row">
+    <div class="add_form">
+
+   <form>
+    {% csrf_token%}
+
+        {% bootstrap_form form.as_p %}
+    {% buttons %}
+        <button type="submit" class="btn btn-primary">Login</button>
+    {% endbuttons %}
+</form>
+
+    </div>
+</div>
+
+
+{% endblock %}
