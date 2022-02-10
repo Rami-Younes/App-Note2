@@ -1,6 +1,6 @@
 beautifulsoup4==4.9.1
 cycler==0.10.0
-Django==2.2
+Django==2.2.27
 django-bootstrap4==2.0.1
 django-ckeditor==5.9.0
 django-js-asset==1.2.2
